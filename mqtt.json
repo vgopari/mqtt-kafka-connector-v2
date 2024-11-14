@@ -1,0 +1,15 @@
+{
+  "name": "mqtt-source",
+  "config": {
+    "name": "mqtt-source",
+    "connector.class": "io.kafka.connector.mqtt.source.MqttSourceConnector",
+    "tasks.max": 3,
+    "mqtt.broker": "tcp://192.168.10.40:1883",
+    "mqtt.topics": "shellies",
+    "kafka.topic": "mqtt-ha-events-topic",
+    "bootstrap.servers": "host-2.pangeras.io:9092,host-3.pangeras.io:9092,host-4.pangeras.io:9092",
+    "mqtt.username": "mpangera",
+    "mqtt.password": "Mahesh@123",
+    "mqtt.subscribe.all": true
+  }
+}

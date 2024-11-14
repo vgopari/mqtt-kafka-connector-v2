@@ -1,0 +1,9 @@
+{
+  "name": "mqtt-source",
+  "connector.class": "io.confluent.connect.mqtt.MqttSourceConnector",
+  "tasks.max": "1",
+  "mqtt.server.uri": "tcp://192.168.10.40:1883",
+  "mqtt.topics": "shellies",
+  "kafka.topic": "test",
+  "bootstrap.servers": "host-2.pangeras.io:9092,host-3.pangeras.io:9092,host-4.pangeras.io:9092"
+}
